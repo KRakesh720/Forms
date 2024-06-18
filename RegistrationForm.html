@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+<meta charset="uft-8">
+<meta name = 'viewport' content="width=device-width initial-scale:1.0">
+<title>Course Registartion Form</title>
+</head>
+<style>
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: aquamarine;
+    padding: 10px 30px;
+ }
+ #outerbody{
+   height: 90vh;
+   width: 50vw;
+   overflow:scroll ;
+   background-color: white;
+ }
+ #innerbody{
+   padding: 5px 10px;
+ }
+#head{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.frow{
+   display: flex;
+   justify-content: space-between;
+}
+.srow{
+   display: flex;
+   justify-content: space-between;
+}
+.frow{
+   display: flex;
+}
+.srow,.sevenrow,.fourthrow{
+   display: flex;
+}
+textarea{
+   width:  -webkit-fill-available;
+   height: 200px;
+}
+</style>
+<body>
+   <header id="outerbody">
+       <div id="innerbody">
+        <section id="head">
+         <H1 style="margin: 0;">Registration Form</H1>
+         <p>Fill out the form carefully for registration</p>
+        </section>
+        <hr>
+        <div>
+         <label style="padding-bottom: 50px;">Student Name</label>
+         <div class="frow">
+            <section>
+               <input type="text"  placeholder="first name">
+            </section>
+            <section>
+               <input type="text"  placeholder="middle name">
+            </section>
+            <section>
+               <input type="text"  placeholder="last name">
+            </section>
+         </div>
+        </div>
+        <div>
+          <label>Birth date</label>
+          <div class="srow">
+             <section>
+               <select id="month" name="month">
+                  <option value="">please select</option>
+                  <option value="jan" >jan</option>
+                  <option value="feb" >feb</option>
+                  <option value="march" >march</option>
+                  <option value="april" >april</option>
+                   <option value="may" >may</option>
+               </select><br>
+               <label for="month">month</label>
+             </section>
+             <section>
+               <select id="day" name="day">
+                  <option value="">please select</option>
+                  <option value="mon" >mon</option>
+                  <option value="tue" >tue</option>
+                  <option value="wed" >wed</option>
+                  <option value="thur">thur</option>
+                   <option value="fri" >fri</option>
+               </select><br>
+               <label for="day">day</label>
+             </section>
+             <section>
+               <select id="date" name="date">
+                  <option value="">please select</option>
+                  <option value="01" >01</option>
+                  <option value="02" >02</option>
+                  <option value="03" >03</option>
+                  <option value="04" >04</option>
+                   <option value="05" >05</option>
+               </select><br>
+               <label for="date">date</label>
+             </section>
+             <section>
+               <select id="gender" name="gender">
+                  <option value="">please select</option>
+                  <option value="male" >male</option>
+                  <option value="female" >female</option>
+                  <option value="n/a" >n/a</option>
+               </select><br>
+               <label for="gender"></label>
+             </section>
+          </div>
+        </div>
+        <div>
+          <label>Address</label><br>
+          <input placeholder="" type="text" >
+        </div>
+        <div>
+         <label> Street Address</label><br>
+         <input placeholder="" type="text" >
+       </div>
+        <div class="frow">
+         <section>
+            <label>Street Address line 2</label><br>
+            <input placeholder="" type="text" ><br>
+            <label>city</label>
+         </section>
+         <section>
+            <br>
+            <input placeholder="" type="text" ><br>
+            <label>State/province</label>
+         </section>
+         <section></section>
+        </div>
+        <div>
+         <section>
+            <input type="number" placeholder=""><br>
+            <label>Postal / Zip Code</label>
+         </section>
+        </div>
+        <div class="fourthrow">
+         <section>
+            <label>Student E-mail</label><br>
+            <input type="email" placeholder="ex: myname@example.com">
+         </section>
+         <section style="margin-left:80px;">
+            <label>Mobile Number</label><br>
+            <input type="number" placeholder="(000) 000-0000">
+         </section>
+        </div>
+        <div class="sevenrow">
+         <section>
+            <label>Company</label><br>
+            <input type="text" placeholder="">
+         </section>
+         <section style="margin-left:80px;">
+            <label for="course">Course</label><br>
+            <select id="course" name="course">
+               <option value="">please select</option>
+               <option value="">devops</option>
+               <option value="">fronend</option> 
+               <option value="">testing</option>
+            </select>
+         </section>
+        </div>
+        <div>
+         <section>
+            <label for="addtional-comment">Additional Comment</label><br>
+            <textarea id="addtional-comment" name="addtional-comment" type="text" placeholder=""></textarea>
+         </section>
+        </div>
+      </div>
+      </header>
+</body>
+</html>
