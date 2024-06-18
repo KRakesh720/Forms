@@ -45,7 +45,7 @@
 }
 textarea{
    width:  -webkit-fill-available;
-   height: 200px;
+   height: 100px;
 }
 </style>
 <body>
@@ -119,11 +119,11 @@ textarea{
         </div>
         <div>
           <label>Address</label><br>
-          <input placeholder="" type="text" >
+          <input style="width:-webkit-fill-available;" placeholder="" type="text" >
         </div>
         <div>
          <label> Street Address</label><br>
-         <input placeholder="" type="text" >
+         <input style="width:-webkit-fill-available;" placeholder="" type="text" >
        </div>
         <div class="frow">
          <section>
@@ -161,12 +161,13 @@ textarea{
          </section>
          <section style="margin-left:80px;">
             <label for="course">Course</label><br>
-            <select id="course" name="course">
-               <option value="">please select</option>
-               <option value="">devops</option>
-               <option value="">fronend</option> 
-               <option value="">testing</option>
-            </select>
+            <input list="course" type="text" placeholder="">
+           <datalist id="course">
+               <option value="full stack">full stack</option>
+               <option value="frontend">frontend</option>
+               <option value="dse">dse</option>
+               <option value="testing">testing</option>
+           </datalist>
          </section>
         </div>
         <div>
@@ -176,7 +177,6 @@ textarea{
          </section>
         </div>
       </div>
-      <!-- still some work need to be done -->
       </header>
 </body>
 </html>
