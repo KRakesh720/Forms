@@ -28,6 +28,8 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   color: #113be2;
+  /* text-indent: 100px;*/
 }
 .frow{
    display: flex;
@@ -47,6 +49,8 @@ textarea{
    width:  -webkit-fill-available;
    height: 100px;
 }
+
+
 </style>
 <body>
    <header id="outerbody">
@@ -57,7 +61,7 @@ textarea{
         </section>
         <hr>
         <div>
-         <label style="padding-bottom: 50px;">Student Name</label>
+         <label style="padding-bottom: 50px;">Student Name</label> 
          <div class="frow">
             <section>
                <input type="text"  placeholder="first name">
@@ -171,7 +175,7 @@ textarea{
          </section>
         </div>
         <div>
-         <section>
+         <section class="lastrow">
             <label for="addtional-comment">Additional Comment</label><br>
             <textarea id="addtional-comment" name="addtional-comment" type="text" placeholder=""></textarea>
          </section>
