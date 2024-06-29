@@ -3,8 +3,10 @@
 <meta charset="uft-8">
 <meta name = 'viewport' content="width=device-width, initial-scale=1.0">
 <title>Course Registartion Form</title>
-<script src="./Form.js"></script>
+<script src="./Form.js">
+</script>
 <link rel="stylesheet" href="./Form.css">
+
 </head>
 <body>
    <header id="outerbody">
@@ -12,6 +14,16 @@
         <section id="head">
          <H1 style="margin: 0;">Registration Form</H1>
          <p>Fill out the form carefully for registration</p>
+        <div id="dt">
+         <p id="hrs">hrs</p>
+         <p id="min">min</p>
+         <p id="sec">sec</p>
+         <p id="ampm">am</p>
+         <p id="day">day</p>
+         <p id="date">date</p>
+         <p id="month">month</p>
+         <p id="year">year</p>
+        </div>
         </section>
         <hr>
         <div>
@@ -29,7 +41,7 @@
          </div>
         </div>
         <div>
-          <label>Birth date</label>
+          <label id="dobchange" onclick='changingdob()'>Birth date</label>
           <div class="srow">
              <section>
                <select id="month" name="month">
@@ -136,6 +148,9 @@
          </section>
         </div>
       </div> 
+      <div id="table">
+
+      </div>
       </header>
 </body>
 <script>
