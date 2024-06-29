@@ -6,6 +6,7 @@ body{
     height: 100vh;
     background-color: aquamarine;
     padding: 10px 30px;
+    box-sizing: border-box;
  }
  #outerbody{
    height: 90vh;
@@ -25,7 +26,7 @@ body{
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   color: #113be2;
+   color: #13ee0c;
   /* text-indent: 100px;*/
 }
 .frow{
@@ -67,4 +68,12 @@ h3{
    50%  {background-color:blue; left:720px; top:95px;}
    75%  {background-color:green; left:0px; top:95px;}
    100% {background-color:red; left:0px; top:0px;}
+ }
+
+ #dt{
+   display: flex;
+   justify-content:space-between;
+   padding: 0;
+   margin: 0%;
+   width: 100%;
  }
